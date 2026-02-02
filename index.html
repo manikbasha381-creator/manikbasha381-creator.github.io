@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Our Little Love World 💖</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive;
+  background: linear-gradient(to bottom right, #ffd6e8, #ffeef5);
+  text-align: center;
+  color: #ff4d88;
+}
+
+h1 {
+  margin-top: 40px;
+  font-size: 40px;
+}
+
+.section {
+  margin: 40px;
+  padding: 20px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 0 15px pink;
+}
+
+img {
+  width: 200px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+button {
+  background: #ff4d88;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#secret {
+  display: none;
+  margin-top: 20px;
+  font-size: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Hi My Love ❤️</h1>
+<p>Welcome to our little corner of the internet ✨</p>
+
+<div class="section">
+  <h2>💑 Our Story</h2>
+  <p>We met on ___ and my life changed forever 🌸</p>
+</div>
+
+<div class="section">
+  <h2>📸 Our Memories</h2>
+  <img src="photo1.jpg">
+  <img src="photo2.jpg">
+</div>
+
+<div class="section">
+  <h2>⏳ Days Together</h2>
+  <p id="count"></p>
+</div>
+
+<div class="section">
+  <h2>💌 A Secret Message</h2>
+  <button onclick="showSecret()">Click me 💖</button>
+  <p id="secret">You are my favorite person in the entire universe 🌍💞</p>
+</div>
+
+<script>
+const startDate = new Date("2024-01-01"); // CHANGE THIS DATE
+const today = new Date();
+const diff = Math.floor((today - startDate)/(1000*60*60*24));
+document.getElementById("count").innerText = diff + " days with you ❤️";
+
+function showSecret() {
+  document.getElementById("secret").style.display = "block";
+}
+</script>
+
+</body>
+</html>
